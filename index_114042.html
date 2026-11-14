@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Review Form</title>
+</head>
+<body>
+           <h1 id="title">Fast Food Chicken</h1>
+           <p>Please complete the survey form to help us improve your
+            dining experience. </p>
+
+           <form method="post" action="index.php" id="survey-form">
+            <label id="email-label" for="email">Your Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+              
+            <br>
+            <label for="date">Date of visit:</label>
+            <input type="date" id="date" name="visit_date">
+
+            <p>How did you order food?</p>
+            <label for="dine-in">Dine in</label>
+            <input type="radio" id="dine-in"  name="order_type" value="dine-in">
+
+            <label for="take-out">Take out</label>
+            <input type="radio" id="take-out"  name="order_type" value="take-out">
+           
+             <br>
+           
+             <label for="dropdown">Food Quality Ratings:</label>
+             <select name="Ratings" id="dropdown">
+                  <option value="" disabled selected>Select a rating</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+             </select>
+             
+              <br>
+             <p>Dishes Ordered and Drinks:</p>
+             <label for="burger-fries">Burger and Fries</label>
+             <input type="checkbox" id="burger-fries"  name="Order[]" value="burger-fries">
+
+             <br>
+             <label for="2-chicken-pieces-fries">2 Chicken pieces and Fries</label>
+             <input type="checkbox" id="2-chicken-pieces-fries"  name="Order[]" value="2 chicken pieces-fries">
+              <br>
+             <label for="25-hot-wings-bucket">25 hot wings bucket</label>
+             <input type="checkbox" id="25-hot-wings-bucket"  name="Order[]" value="25 hot wings bucket">
+
+             <br>
+             <label for="500ml-coca-cola">500ml Coca cola</label>
+             <input type="checkbox" id="500ml-coca-cola"  name="Order[]" value="500ml Coca cola">
+
+             <br>
+             <label for="500ml-fanta-orange">500ml Fanta orange</label>
+             <input type="checkbox" id="500ml-fanta-orange"  name="Order[]" value="500ml Fanta orange">
+             
+             <br>
+             <label for="comment">Service Comments:</label>
+             <br>
+             <textarea name="comment" id="comment" rows="3" cols="25" placeholder="Write your comments here...."></textarea>
+
+             <br>
+            <button type="submit">Submit</button>
+           </form>
+</body>
+</html>
